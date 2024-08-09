@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center>
+    <h1>Post Your Blog</h1>
+    <form method="POST">
+        {% csrf_token %}
+            {{FO.as_p}}
+
+            <br><br><input type="submit" value="Post">
+            
+    </form>
+    <p><a href="{% url 'post_list' %}">See All Blog Posts</a></p>
+   </center> 
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Details Of Blog</h1>
+        <h1>{{ post.title }}</h1>
+        <p>Published on: {{ post.published_date }}</p>
+        <div>{{ post.content }}</div>
+        <p><a href="{% url 'post_list' %}">See All Blog Posts</a></p>
+    </center>
+</body>
+</html>
